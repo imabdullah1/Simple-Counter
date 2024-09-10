@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const cutPieces = function (fruit) {
+      //   return fruit * 4;
+      // };
+      // const friutProcessor = function (apples, oranges) {
+      //   const applePieces = cutPieces(apples);
+      //   const orangePieces = cutPieces(oranges);
+      //   const juice = `juice with ${applePieces} pieces of Apple and ${orangePieces} pieces of oranges`;
+      //   return juice;
+      // };
+      // console.log(friutProcessor(3, 4));
+    </script>
+    <h1>Counter</h1>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+    <p id="count">0</p>
+
+    <script>
+      // Initialize the counter variable
+      let counter = 0;
+
+      // Function to increment the counter
+      function increment() {
+        counter++;
+        updateCount();
+      }
+
+      // Function to decrement the counter
+      function decrement() {
+        if (counter < 1 == 00) {
+          counter--;
+          updateCount();
+        }
+      }
+
+      // Function to update the count display
+      function updateCount() {
+        const countElement = document.getElementById("count");
+        countElement.textContent = counter;
+      }
+    </script>
+  </body>
+</html>
